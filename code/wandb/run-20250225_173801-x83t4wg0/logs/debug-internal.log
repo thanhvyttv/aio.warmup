@@ -1,0 +1,16 @@
+{"time":"2025-02-25T17:38:01.100462+07:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/Users/vytran/Documents/AI/AIO2025/aio.warmup/code/wandb/run-20250225_173801-x83t4wg0/logs/debug-core.log"}
+{"time":"2025-02-25T17:38:01.119987+07:00","level":"INFO","msg":"created new stream","id":"x83t4wg0"}
+{"time":"2025-02-25T17:38:01.120166+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"x83t4wg0"}
+{"time":"2025-02-25T17:38:01.120334+07:00","level":"INFO","msg":"stream: started","id":"x83t4wg0"}
+{"time":"2025-02-25T17:38:01.120422+07:00","level":"INFO","msg":"handler: started","stream_id":"x83t4wg0"}
+{"time":"2025-02-25T17:38:01.120621+07:00","level":"INFO","msg":"sender: started","stream_id":"x83t4wg0"}
+{"time":"2025-02-25T17:38:01.792179+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-25T17:38:02.973478+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-25T17:38:02.973596+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-25T17:38:03.985752+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-x83t4wg0-Dataset","runtime_seconds":1.496522144},{"desc":"uploading output.log","runtime_seconds":0.712149762},{"desc":"uploading config.yaml","runtime_seconds":0.448861255,"progress":"494B/494B"}],"total_operations":3}}
+{"time":"2025-02-25T17:38:05.008242+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-25T17:38:06.407623+07:00","level":"INFO","msg":"stream: closing","id":"x83t4wg0"}
+{"time":"2025-02-25T17:38:06.407668+07:00","level":"INFO","msg":"handler: closed","stream_id":"x83t4wg0"}
+{"time":"2025-02-25T17:38:06.407691+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"x83t4wg0"}
+{"time":"2025-02-25T17:38:06.407717+07:00","level":"INFO","msg":"sender: closed","stream_id":"x83t4wg0"}
+{"time":"2025-02-25T17:38:06.408713+07:00","level":"INFO","msg":"stream: closed","id":"x83t4wg0"}

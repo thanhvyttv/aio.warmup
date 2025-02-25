@@ -1,0 +1,17 @@
+2025-02-25 18:07:18,256 INFO    MainThread:4016 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/vytran/Documents/AI/AIO2025/aio.warmup/code/wandb/run-20250225_180718-x8jerqtf/logs/debug.log
+2025-02-25 18:07:18,256 INFO    MainThread:4016 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/vytran/Documents/AI/AIO2025/aio.warmup/code/wandb/run-20250225_180718-x8jerqtf/logs/debug-internal.log
+2025-02-25 18:07:18,257 INFO    MainThread:4016 [wandb_init.py:init():761] calling init triggers
+2025-02-25 18:07:18,257 INFO    MainThread:4016 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.01, 'epochs': 1000, '_wandb': {}}
+2025-02-25 18:07:18,258 INFO    MainThread:4016 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-02-25 18:07:42,403 INFO    MainThread:4016 [wandb_run.py:_finish():2112] finishing run thanhvyttv-aio/demo-linear-regression-advertisingData/szwl5z8y
+2025-02-25 18:07:42,403 ERROR   MainThread:4016 [jupyter.py:save_history():450] Run pip install nbformat to save notebook history
+2025-02-25 18:07:42,403 INFO    MainThread:4016 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-02-25 18:07:42,403 INFO    MainThread:4016 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-02-25 18:07:42,403 INFO    MainThread:4016 [wandb_run.py:_atexit_cleanup():2342] got exitcode: 0
+2025-02-25 18:07:42,404 INFO    MainThread:4016 [wandb_run.py:_restore():2324] restore
+2025-02-25 18:07:42,404 INFO    MainThread:4016 [wandb_run.py:_restore():2330] restore done
+2025-02-25 18:07:47,617 INFO    MsgRouterThr:4016 [mailbox.py:close():115] Closing mailbox, abandoning 1 handles.
+2025-02-25 18:07:47,618 INFO    MainThread:4016 [wandb_run.py:_footer_history_summary_info():3958] rendering history
+2025-02-25 18:07:47,618 INFO    MainThread:4016 [wandb_run.py:_footer_history_summary_info():3990] rendering summary
+2025-02-25 18:07:47,620 INFO    MainThread:4016 [wandb_run.py:_footer_sync_info():3919] logging synced files

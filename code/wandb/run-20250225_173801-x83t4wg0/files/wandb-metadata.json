@@ -1,0 +1,35 @@
+{
+  "os":  "macOS-15.3.1-x86_64-i386-64bit",
+  "python":  "CPython 3.11.8",
+  "startedAt":  "2025-02-25T10:38:01.092602Z",
+  "program":  "/Users/vytran/Documents/AI/AIO2025/aio.warmup/code/Day17.ipynb",
+  "codePath":  "code/Day17.ipynb",
+  "git":  {
+    "remote":  "https://github.com/thanhvyttv/aio.warmup.git",
+    "commit":  "27241ebdc558cf8b002d233dbc74ba5000620f30"
+  },
+  "email":  "thanhvyttv2112@gmail.com",
+  "root":  "/Users/vytran/Documents/AI/AIO2025/aio.warmup/code",
+  "host":  "Trans-MacBook-Pro.local",
+  "executable":  "/Users/vytran/Documents/AI/AIO2025/aio.warmup/code/.venv/bin/python",
+  "codePathLocal":  "Day17.ipynb",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "499963174912",
+      "used":  "481230020608"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "499963174912",
+      "used":  "481230020608"
+    }
+  },
+  "memory":  {
+    "total":  "17179869184"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  8
+  }
+}

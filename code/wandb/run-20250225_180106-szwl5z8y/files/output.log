@@ -1,0 +1,48 @@
+        TV  Radio  Newspaper
+0    230.1   37.8       69.2
+1     44.5   39.3       45.1
+2     17.2   45.9       69.3
+3    151.5   41.3       58.5
+4    180.8   10.8       58.4
+..     ...    ...        ...
+195   38.2    3.7       13.8
+196   94.2    4.9        8.1
+197  177.0    9.3        6.4
+198  283.6   42.0       66.2
+199  232.1    8.6        8.7
+
+[200 rows x 3 columns]
+0      230.1
+1       44.5
+2       17.2
+3      151.5
+4      180.8
+       ...
+195     38.2
+196     94.2
+197    177.0
+198    283.6
+199    232.1
+Name: TV, Length: 200, dtype: float64
+        TV  Radio  Newspaper
+0    230.1   37.8       69.2
+1     44.5   39.3       45.1
+2     17.2   45.9       69.3
+3    151.5   41.3       58.5
+4    180.8   10.8       58.4
+..     ...    ...        ...
+195   38.2    3.7       13.8
+196   94.2    4.9        8.1
+197  177.0    9.3        6.4
+198  283.6   42.0       66.2
+199  232.1    8.6        8.7
+
+[200 rows x 3 columns]
+22.1
+10.4
+/var/folders/ms/vbczhg656qjfkygpp8ffnxzm0000gn/T/ipykernel_4016/3257868026.py:14: RuntimeWarning: overflow encountered in scalar power
+  return ((y_hat - y)**2) / 2.0
+/var/folders/ms/vbczhg656qjfkygpp8ffnxzm0000gn/T/ipykernel_4016/3257868026.py:18: RuntimeWarning: overflow encountered in scalar multiply
+  dl_dwi = 2*xi*(y_hat - y)
+/var/folders/ms/vbczhg656qjfkygpp8ffnxzm0000gn/T/ipykernel_4016/3257868026.py:27: RuntimeWarning: invalid value encountered in scalar subtract
+  new_wi = wi - lr * dwi
