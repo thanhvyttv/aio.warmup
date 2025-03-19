@@ -1,0 +1,117 @@
+• Câu 1: Viết lệnh SQL để tạo bảng Salespersons.
+CREATE TABLE aio2025_demodb.salespersons (
+	sales_person_id INT auto_increment NOT NULL,
+	fullname varchar(100) NOT NULL,
+	email varchar(100) NOT NULL,
+	phone_number varchar(100) NULL,
+	CONSTRAINT salespersons_pk PRIMARY KEY (sales_person_id),
+	CONSTRAINT salespersons_unique UNIQUE KEY (email)
+);
+
+• Câu 2: Viết lệnh SQL để tạo bảng Customers.
+CREATE TABLE aio2025_demodb.customers (
+	customer_id INT auto_increment NOT NULL,
+	fullname varchar(100) NOT NULL,
+	email varchar(100) NOT NULL,
+	phone_number varchar(100) NULL,
+	CONSTRAINT customers_pk PRIMARY KEY (customer_id),
+	CONSTRAINT customers_unique UNIQUE KEY (email)
+);
+
+• Câu 3: Viết lệnh SQL để tạo bảng Orders.
+CREATE TABLE aio2025_demodb.orders (
+	order_id INT auto_increment NOT NULL,
+	customer_id INT NULL,
+	sales_person_id INT NULL,
+	order_date DATE NULL,
+	total_amount DECIMAL NULL,
+	CONSTRAINT orders_pk PRIMARY KEY (order_id),
+	CONSTRAINT orders_customers_FK FOREIGN KEY (customer_id) REFERENCES aio2025_demodb.customers(customer_id),
+	CONSTRAINT orders_salespersons_FK FOREIGN KEY (sales_person_id) REFERENCES aio2025_demodb.salespersons(sales_person_id)
+);
+
+• Câu 4: Chèn dữ liệu vào bảng Salespersons
+INSERT INTO aio2025_demodb.salespersons
+(sales_person_id, fullname, email, phone_number)
+VALUES
+(1,'TestData1','TestData1@data.com','1234567890'),
+(2,'TestData2','TestData2@data.com','1234567890'),
+(3,'TestData3','TestData3@data.com','1234567890'),
+(4,'TestData4','TestData4@data.com','1234567890'),
+(5,'TestData5','TestData5@data.com','1234567890'),
+(6,'TestData6','TestData6@data.com','1234567890'),
+(7,'TestData7','TestData7@data.com','1234567890');
+
+• Câu 5: Chèn dữ liệu vào bảng Customers.
+INSERT INTO aio2025_demodb.customers
+(customer_id, fullname, email, phone_number)
+VALUES
+(1,'customer1','customer_mail1@data.com','1234567890'),
+(2,'customer2','customer_mail2@data.com','1234567890'),
+(3,'customer3','customer_mail3@data.com','1234567890'),
+(4,'customer4','customer_mail4@data.com','1234567890'),
+(5,'customer5','customer_mail5@data.com','1234567890'),
+(6,'customer6','customer_mail6@data.com','1234567890'),
+(7,'customer7','customer_mail7@data.com','1234567890');
+
+• Câu 6: Chèn dữ liệu vào bảng Orders.
+INSERT INTO aio2025_demodb.orders
+(order_id, customer_id, sales_person_id, order_date, total_amount)
+VALUES
+(1,5,2,'2024/04/23',2452922),
+(2,1,4,'2024/07/05',7972336),
+(3,7,4,'2024/08/21',6264611),
+(4,3,6,'2024/06/03',8931947),
+(5,2,7,'2024/04/11',8255736),
+(6,3,2,'2024/03/07',3181224),
+(7,4,4,'2024/12/15',9131878),
+(8,7,3,'2024/08/10',1169398),
+(9,3,6,'2024/01/20',2233125),
+(10,2,2,'2024/02/09',415754),
+(11,7,5,'2024/04/27',2448332),
+(12,4,1,'2024/01/17',7021722),
+(13,1,1,'2024/12/15',4462475),
+(14,5,3,'2024/09/27',2037313),
+(15,7,1,'2024/06/11',49131),
+(16,3,1,'2024/08/05',7128277),
+(17,4,6,'2024/03/28',8359985),
+(18,5,4,'2024/05/04',2873092),
+(19,3,5,'2024/02/03',330519),
+(20,1,2,'2024/03/06',6339367),
+(21,6,2,'2024/10/21',9492974),
+(22,2,4,'2024/08/05',8637733);
+
+• Câu 7: Liệt kê tất cả các đơn hàng của nhân viên có SalespersonID = 1
+SELECT * FROM aio2025_demodb.orders WHERE sales_person_id = 1;
+
+• Câu 8: Tìm khách hàng có số lượng đơn hàng nhiều nhất.
+SELECT customer_id, count(order_id) as order_count FROM aio2025_demodb.orders
+GROUP BY customer_id
+ORDER BY order_count DESC
+LIMIT 1;
+
+• Câu 9: Tính tổng doanh số của từng nhân viên.
+SELECT sales_person_id, sum(total_amount) as total_sale
+FROM aio2025_demodb.orders
+GROUP BY sales_person_id;
+
+• Câu 10: Tìm nhân viên có doanh số cao nhất.
+SELECT sales_person_id, sum(total_amount) as total_sale
+FROM aio2025_demodb.orders
+GROUP BY sales_person_id
+ORDER BY total_sale DESC
+LIMIT 1;
+
+• Câu 11: Cập nhật tổng giá trị đơn hàng có OrderID = 2 thành 4.500.000
+UPDATE aio2025_demodb.orders
+SET total_amount = 4500000
+WHERE order_id = 2;
+
+• Câu 12: Cập nhật số điện thoại của khách hàng có CustomerID = 3
+UPDATE aio2025_demodb.customers
+SET phone_number = '121212121212'
+WHERE customer_id = 3;
+
+• Câu 13: Xóa tất cả các đơn hàng của khách hàng có CustomerID = 2
+DELETE FROM aio2025_demodb.orders
+WHERE customer_id = 2;
